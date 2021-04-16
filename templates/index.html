@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Static-html-viewer</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>HTML Files</th>
+			</tr>
+			<!-- onclick="window.location.href='/{{x}}'" -->
+			{% for x in b %}
+			<tr>
+				<td><a href = "{{x}}">{{x}}</a></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
